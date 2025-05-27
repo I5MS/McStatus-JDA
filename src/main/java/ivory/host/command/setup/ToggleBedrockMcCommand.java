@@ -37,7 +37,8 @@ public class ToggleBedrockMcCommand extends DCommand {
 
         guildManager.setBedrockCommandEnabled(!guildManager.isBedrockCommandEnabled());
 
-        e.reply("The Bedrock mc command has been " + (guildManager.isBedrockCommandEnabled() ? "Enabled" : "Disabled")).setEphemeral(true).queue();
+        e.reply("The Bedrock mc command has been " + (guildManager.isBedrockCommandEnabled() ? "Enabled" :
+                                                      "Disabled")).setEphemeral(true).queue();
 
         GuildTable.getInstance().updateGuild(guildManager);
     }

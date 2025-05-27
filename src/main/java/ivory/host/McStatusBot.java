@@ -1,6 +1,5 @@
 package ivory.host;
 
-import ivory.host.Database.DataBaseConnection;
 import ivory.host.util.Registers;
 import ivory.host.util.classes.DEvent;
 import ivory.host.util.classes.TableBuilder;
@@ -32,7 +31,7 @@ public class McStatusBot {
 
         registerDatabaseTables();
 
-        shardManager = DefaultShardManagerBuilder.createDefault("")
+        shardManager = DefaultShardManagerBuilder.createDefault("<BOT TOKEN>")
                 .setStatus(OnlineStatus.ONLINE)
                 .setActivity(Activity.watching("Minecraft Server Status"))
                 .enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MEMBERS, GatewayIntent.GUILD_PRESENCES)

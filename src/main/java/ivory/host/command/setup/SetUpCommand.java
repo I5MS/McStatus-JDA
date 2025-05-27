@@ -72,7 +72,6 @@ public class SetUpCommand extends DCommand {
                 "IP: " + ip + "\n" +
                 "Port: " + port).setEphemeral(true).queue();
 
-
         GuildTable.getInstance().updateGuild(guildManager);
     }
 }

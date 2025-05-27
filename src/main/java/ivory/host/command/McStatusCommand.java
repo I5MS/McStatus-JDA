@@ -1,7 +1,7 @@
 package ivory.host.command;
 
-import ivory.host.util.server.McEmbedBuilder;
 import ivory.host.util.classes.DCommand;
+import ivory.host.util.server.McEmbedBuilder;
 import lombok.SneakyThrows;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;

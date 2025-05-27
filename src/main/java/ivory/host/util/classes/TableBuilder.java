@@ -9,10 +9,6 @@ import java.sql.Statement;
 
 public abstract class TableBuilder {
 
-    protected Connection getConnection() {
-        return DataBaseConnection.getConnection();
-    }
-
     public TableBuilder() {
         try {
             createTable();
@@ -21,6 +17,10 @@ public abstract class TableBuilder {
             CSend.error("Failed to initialize table");
             CSend.error(e);
         }
+    }
+
+    protected Connection getConnection() {
+        return DataBaseConnection.getConnection();
     }
 
     protected abstract void createTable() throws SQLException;

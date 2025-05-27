@@ -386,8 +386,8 @@ public class McEmbedBuilder {
             if (obj.has("color")) {
                 String colorStr = obj.get("color").getAsString();
                 current.setColor(colorStr.startsWith("#") ?
-                        tryDecodeColor(colorStr) :
-                        MC_COLOR_MAP.getOrDefault(colorStr, Color.WHITE));
+                                 tryDecodeColor(colorStr) :
+                                 MC_COLOR_MAP.getOrDefault(colorStr, Color.WHITE));
             }
 
             if (obj.has("bold")) current.setBold(obj.get("bold").getAsBoolean());

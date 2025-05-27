@@ -27,5 +27,4 @@ public abstract class DCommand extends ListenerAdapter {
 
     public abstract void onSlashCommandInteraction(SlashCommandInteractionEvent e);
 
-
 }
